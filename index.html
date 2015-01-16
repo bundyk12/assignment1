@@ -1,83 +1,107 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Examples</title>
-    <style>
-        body {
-            margin:0;
-        }
-    </style>
-    <link rel="stylesheet" href="css/styles.css"></link>
-</head>
-<body>
-    <noscript>
-        This webpage does not have Javascript enabled.
-    </noscript>
-<!---section-->
-    <section>
-        <header>Page title</header>
-        <footer>Copyright</footer>
-    </section>
-    <section>
-        <article>
-            Put the blog article here.
-            <img src="images/picture.jpg" alt="alternative image text"></img>
-        </article>
-        <iframe src="http://www.google.com"></iframe>
-        <embed></embed>
-        <video autoplay controls loop preload="metadata" poster="img/myPoster">
-            <source src="foo.webm" type="video/webm"></source>
-            <source src="foo.ogg" type="video/ogg"></source>
-            <source src="foo.mov" type="video/quicktime"></source>
-        </video>
-        <audio></audio>
-        <canvas></canvas>
-        <svg></svg>
-        <table>
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Temperature</th>             
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Jan 1st</td>
-                    <td>20 Degrees Fahrenheit</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section>
-        <form action="/analysis.php" method="POST" novalidate>
-            <label for="nameField">
-                Your Name:
-            </label>
-            <input id="nameField" type="text" name="userName" placeholder="Your Name" />
-            <input type="checkbox" checked name="userName" />
-            
-            <input type="color" name="userName" />
-            <input type="date" name="userName" />
-            <input type="email" name="userName" />
-            <input type="password" name="userName" required />
-            <input type="number" name="userName" />
-            <textarea></textarea>
-            <select>
-                <option></option>
-                <option></option>
-            </select>
+	<head>
+		<title>Twelve 24 Design | Denver, Colorado</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href"css/styles.css"></link>
+	</head>
+	<body>
+		<!--Header-->
+		<header class="headerContainer">
+			<header class="logo">
+				<img src="images/logo.png" />
+			</header>
+			<header class="companyName">Twelve 24 Design</header>
+			<header class="quote">Good advertising penetrates the public mind with desires and beliefs. –Leo Burnett</header>
+		</header>
+	
+		<!--Nav-->
+		<nav id="mainNav">
+			<ul class="mainNav">
+				<li>Home</li>
+				<li><a href="resume.html">Resume</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="">Work</a>
+					<ul class="subNav">
+                        <li><a href="print.html">Print</a></li>
+						<li><a href="identity.html">Identity</a></li>
+						<li><a href="interactive.html">Interactive</a></li>
+						<li><a href="photography.html">Photography</a></li>
+						<li><a href="packaging.html">Packaging</a></li>
+					</ul>
+				</li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!--CallOuts-->
+		<section class="callout">
+			<header>
+				<h1>Resume</h1>
+			</header>
+			<p>Not only do I have all of the obvious things that a web designer and developer should have, but I do some pretty cool things in my free time, as well. Find out more by <a href="resume.html">checking out my resume.</a></p>
+		</section>
+
+		<section class="callout">
+			<header>
+				<h1>Blog</h1>
+			</header>
+			<p>I read about some pretty interesting things on a daily basis. Occasionally, I regurgitate the interesting parts and add in my opinion. Check out my latest ponderings on <a href="blog.html">my blog.</a></p>
+		</section>
+
+		<section class="callout">
+			<header>
+				<h1>Portfolio</h1>
+			</header>
+			<p>I'm assuming you aren't going to just take my word for it that I know what I am doing, so go ahead, take a look through my <a href="work.html">portfolio.</a> Check out my clean design style, modern looks and creative ability.</p>
+		</section>
+
+		<!--Main-->
+		<section id="main">
+			<form action="" method="">
+				<label for="email">
+	                E-mail Address:
+	            </label>
+	            <input id="email" type="email" name="email" placeholder="Your E-mail" />
+	            <label for="subscribe">
+	                Subscribe to Our E-mail List:
+	            </label>
+	            <input type="checkbox" id="subscribe" name="subscribe" />
+				<label for="information">
+	                Tell Us About Yourself:
+	            </label>
+	            <textarea id="information" name="information"></textarea>
+				<label for="career">
+	                Your Career Field:
+	            </label>
+	            <select id="career" name="career">
+	                <option id="agricultural">Agricultural</option>
+	                <option id="arts">Arts</option>
+	                <option id="business">Business</option>
+	                <option id="education">Education</option>
+	                <option id="finance">Finance</option>
+	                <option id="government">Government</option>
+	                <option id="hospitality">Hospitality</option>
+	                <option id="it">IT</option>
+	                <option id="medical">Medical</option>
+	                <option id="professional">Professional</option>
+	                <option id="public safety">Public Safety</option>
+	                <option id="transportation">Transportation</option>
+	            </select>
+	            <input type="submit" value="submit">
+			</form>
+		</section>
 
 
 
-            <input type="submit" value="submit">
-        </form>
-
-
-    </section>
 
 
 
-<script async src="javascript/main.js"></script>
-</body>
+		<footer>Copyright ©2015 Twelve 24 Design • All rights reserved. • 757.343.9145 • 1972 S. Macon Way • Aurora, CO • 80014 • <a href="mailto:kb@twelve24design.com">E-mail Us</a> • Terms of Use</footer>
 
+
+
+	</body>
 </html>
