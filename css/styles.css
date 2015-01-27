@@ -183,7 +183,7 @@ footer a {
 }
 
 h1.pageTitle {
-	font-size: 3vw;
+	font-size: 3em;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	color:#333;
@@ -191,7 +191,7 @@ h1.pageTitle {
 }
 
 h2 {
-	font-size: 1.3vw;
+	font-size: 1.3em;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	color:#009345;
@@ -199,12 +199,52 @@ h2 {
 }
 
 p.date {
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color:#333;
 }
+
+article p, .leftBarCallout p, .leftBarCallout ul li, .resumeSection p, .resumeSection ul li {
+	font-size: .9em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	line-height: 2em;
 }
 
+p.author {
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
 
+#leftBar {
+	width:20%;
+	background-color: rgba(238,238,238,.85);	
+	border-radius: 1.2em;
+	margin:10% 2% 0 5%;
+	padding:3%;
+	display: inline-block;
+	vertical-align: top;
+}
 
+#mainRight {
+	width:50%;
+	background-color: rgba(238,238,238,.85);	
+	border-radius: 1.2em;
+	margin:10% 2% 0 2%;
+	padding:3%;
+	display: inline-block;
+	vertical-align: top;
+}
 
+h3 {
+	font-size: 1.2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color:#333;
+}
 
 
 
