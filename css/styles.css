@@ -182,6 +182,14 @@ footer a {
 	text-decoration: none;
 }
 
+h1.pageTitle {
+	font-size: 3vw;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color:#333;
+	font-style: normal;
+}
+
 
 
 
