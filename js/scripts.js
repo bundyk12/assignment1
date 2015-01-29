@@ -23,17 +23,21 @@ var footer = getElementsByTagName('footer');
 var spanFooter1 = document.createElement('span');
 spanFooter1.classList.add('footer');
 spanFooter1.textContent = "Copyright ©2015 Twelve 24 Design • All rights reserved. • 757.343.9145 • 1972 S. Macon Way • Aurora, CO • 80014 • ";
+footer.appendChild(spanFooter1);
 
 var aEmail = document.createElement('a');
 aEmail.classList.add('footer');
 aEmail.setAttribute('href', 'mailto:kb@twelve24design.com');
 aEmail.textContent = "E-mail Us";
+footer.appendChild(aEmail);
 
 var spanFooter2 = document.createElement('span');
 spanFooter2.classList.add('footer');
 spanFooter2.textContent = " • "
+footer.appendChild(spanFooter2);
 
 var aTerms = document.createElement('a');
 aTerms.classList.add('footer');
 aTerms.setAttribute('href', 'terms.html');
 aTerms.textContent = "Terms of Use";
+footer.appendChild(aTerms);
