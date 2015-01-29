@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/styles.css"></link>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src='js/scripts.js'></script>
 	</head>
 	<body>
 		<!--Nav-->
@@ -29,13 +30,7 @@
 		</nav>
 
 		<!--Header-->
-		<header class="headerContainer">
-			<img src="images/t24d_logo.jpg" />
-			<p class="name">Twelve 24 Design</p>
-			<section id="quote">
-				<p class="quote">Good advertising penetrates the public mind with desires and beliefs. –Leo Burnett</p>
-			</section>
-
+		<header>
 		</header>
 	
 		<!--CallOuts-->
@@ -89,9 +84,28 @@
 
 			<section class="resumeSection">
 				<h2>
-					<button id="education">
+					<span id="educationButton">
 						>
-					</button>
+					</span>
+					<script>
+						var educationButton = document.getElementById('educationButton');
+						var educationBlock = document.getElementById('educationBlock');
+						var visible = false;
+						educationButton.addEventListener('click', 
+							function (evt) {
+								if(visible==false) {
+									educationButton.classList.add('rotated');
+									educationBlock.classList.remove('collapsed');
+									visible = true;
+									else {
+										educationButton.classList.remove('rotated');
+										educationBlock.classList.add('collapsed');
+										visible = false;
+									}
+
+								}
+							}
+					</script>
 					 Education
 				</h2>
 				<div class="collapsed" id="educationBlock">
@@ -102,9 +116,28 @@
 
 			<section class="resumeSection">
 				<h2>
-					<button id="experience">
+					<span id="experienceButton">
 						>
-					</button>
+					</span>
+					<script>
+						var experienceButton = document.getElementById('experienceButton');
+						var experienceBlock = document.getElementById('experienceBlock');
+						var visible = false;
+						experienceButton.addEventListener('click', 
+							function (evt) {
+								if(visible==false) {
+									experienceButton.classList.add('rotated');
+									experienceBlock.classList.remove('collapsed');
+									visible = true;
+									else {
+										experienceButton.classList.remove('rotated');
+										experienceBlock.classList.add('collapsed');
+										visible = false;
+									}
+
+								}
+							}
+					</script>
 					 Experience
 				</h2>
 				<div class="collapsed" id="experienceBlock">
@@ -155,9 +188,28 @@
 
 			<section class="resumeSection">
 				<h2>
-					<button id="volunteer">
+					<span id="volunteerButton">
 						>
-					</button>
+					</span>
+					<script>
+						var volunteerButton = document.getElementById('volunteerButton');
+						var volunteerBlock = document.getElementById('volunteerBlock');
+						var visible = false;
+						volunteerButton.addEventListener('click', 
+							function (evt) {
+								if(visible==false) {
+									volunteerButton.classList.add('rotated');
+									volunteerBlock.classList.remove('collapsed');
+									visible = true;
+									else {
+										volunteerButton.classList.remove('rotated');
+										volunteerBlock.classList.add('collapsed');
+										visible = false;
+									}
+
+								}
+							}
+					</script>
 					 Volunteer Work
 				</h2>
 				<div class="collapsed" id="volunteerBlock">
@@ -180,11 +232,11 @@
 			</section>
 			<section class="resumeSection">
 				<h2>
-					<span id="awards">
+					<span id="awardsButton">
 						>
 					</span>
 					<script>
-						var awardsButton = document.getElementById('awards');
+						var awardsButton = document.getElementById('awardsButton');
 						var awardsBlock = document.getElementById('awardsBlock');
 						var visible = false;
 						awardsButton.addEventListener('click', 
@@ -214,7 +266,6 @@
 		</main>
 
 		<footer>
-			Copyright ©2015 Twelve 24 Design • All rights reserved. • 757.343.9145 • 1972 S. Macon Way • Aurora, CO • 80014 • <a href="mailto:kb@twelve24design.com">E-mail Us</a> • Terms of Use
 		</footer>
 	</body>
 </html>

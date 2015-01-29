@@ -20,4 +20,20 @@ pSectionHeader.textContent = "Good advertising penetrates the public mind with d
 sectionHeader.appendChild(pSectionHeader);
 
 var footer = getElementsByTagName('footer');
-footer.textContent = "Copyright ©2015 Twelve 24 Design • All rights reserved. • 757.343.9145 • 1972 S. Macon Way • Aurora, CO • 80014 • E-mail Us • Terms of Use";
+var spanFooter1 = document.createElement('span');
+spanFooter1.classList.add('footer');
+spanFooter1.textContent = "Copyright ©2015 Twelve 24 Design • All rights reserved. • 757.343.9145 • 1972 S. Macon Way • Aurora, CO • 80014 • ";
+
+var aEmail = document.createElement('a');
+aEmail.classList.add('footer');
+aEmail.setAttribute('href', 'mailto:kb@twelve24design.com');
+aEmail.textContent = "E-mail Us";
+
+var spanFooter2 = document.createElement('span');
+spanFooter2.classList.add('footer');
+spanFooter2.textContent = " • "
+
+var aTerms = document.createElement('a');
+aTerms.classList.add('footer');
+aTerms.setAttribute('href', 'terms.html');
+aTerms.textContent = "Terms of Use";
