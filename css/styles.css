@@ -246,13 +246,17 @@ h3 {
 	color:#333;
 }
 
+.collapsed {
+	visibility:hidden;
+}
 
+.rotated {
+	transform:rotate(-90);
+}
 
-
-
-
-
-
+span {
+	cursor: pointer;
+}
 
 
 
